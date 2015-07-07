@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stocks, except: [:new, :edit]
   get 'api/', :to => redirect('/404.html')
   get '(*path)', :to => 'pages#show', id: 'index'
   #get '(*path)', :to => redirect('/500.html')
