@@ -1,5 +1,6 @@
 var keyMirror = require('keymirror');
 
 module.exports = keyMirror({
-  LOGIN_SEND: null
+  LOGIN_SUCCESS: null,
+  LOGIN_ERROR: null
 });

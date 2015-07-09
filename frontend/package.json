@@ -10,7 +10,10 @@
     "jquery": "2.1.4",
     "watchify": "3.2.1",
     "keymirror": "^0.1.1",
-    "flux": "^2.0.3"
+    "react-router": "^0.13.2",
+    "flux": "^2.0.3",
+    "object-assign": "^3.0.0",
+    "events": "^1.0.2"
   },
   "scripts": {
     "build": "browserify --debug --transform reactify src/index.js > ../stock_tracker/public/bundle.js",

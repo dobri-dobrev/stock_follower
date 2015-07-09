@@ -4,13 +4,35 @@
 //https://auth0.com/blog/2015/04/09/adding-authentication-to-your-react-flux-app/
 //https://github.com/auth0/react-flux-jwt-authentication-sample/tree/gh-pages/src/components
 var React = require('react');
-var $ = require('jquery');
-var LoginForm = require('./components/loginForm.js');
+var Router = require('react-router');
+var Route = Router.Route;
 
-React.render(
-  <LoginForm />,
-  $("#container")[0]
-);
+var $ = require('jquery');
+
+
+var RouterContainer = require('./services/routerContainer.js');
+var routes = require('./routes.js');
+var router = Router.create({
+  routes: routes,
+  location: Router.HistoryLocation
+});
+
+RouterContainer.set(router);
+
+router.run(function (Handler) {
+  React.render(<Handler />, $("#container")[0]);
+});
+
+// Router.run(routes, Router.HistoryLocation, function (Handler) {
+//   React.render(<Handler/>, $("#container")[0]);
+// });
+
+
+
+// React.render(
+//   <LoginForm />,
+//   $("#container")[0]
+// );
 
 
 // var CommentList = React.createClass({
