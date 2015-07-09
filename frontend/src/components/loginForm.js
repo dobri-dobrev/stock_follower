@@ -6,9 +6,9 @@ var LoginForm = React.createClass({
   loginClick: function() {
     var email = React.findDOMNode(this.refs.email).value.trim();
     var pass = React.findDOMNode(this.refs.password).value.trim();
-    var base64_encoded_text = btoa(email+":"+pass);
-    if (base64_encoded_text.trim()){
-      LoginActions.snd(base64_encoded_text);
+    
+    if (email.trim() && pass.trim){
+      LoginActions.login_send(email, pass);
     }
   },
   render: function() {

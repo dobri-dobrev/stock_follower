@@ -9,7 +9,8 @@
     "reactify": "^0.17.1",
     "jquery": "2.1.4",
     "watchify": "3.2.1",
-    "keymirror": "^0.1.1"
+    "keymirror": "^0.1.1",
+    "flux": "^2.0.3"
   },
   "scripts": {
     "build": "browserify --debug --transform reactify src/index.js > ../stock_tracker/public/bundle.js",

@@ -1,6 +1,8 @@
 'use strict';
 //https://github.com/facebook/flux/tree/master/examples/flux-todomvc
 //https://thesocietea.org/2015/04/building-a-json-api-with-rails-part-4-implementing-authentication/
+//https://auth0.com/blog/2015/04/09/adding-authentication-to-your-react-flux-app/
+//https://github.com/auth0/react-flux-jwt-authentication-sample/tree/gh-pages/src/components
 var React = require('react');
 var $ = require('jquery');
 var LoginForm = require('./components/loginForm.js');
