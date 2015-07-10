@@ -1,4 +1,5 @@
-var LoginConstants = require('../constants/loginConstants');
+var LoginConstants = require('../constants/loginConstants.js');
+var AuthService    = require('../services/authService.js');
 
 var LoginActions = {
   login_send: function(email, pass) {

@@ -13,7 +13,9 @@
     "react-router": "^0.13.2",
     "flux": "^2.0.3",
     "object-assign": "^3.0.0",
-    "events": "^1.0.2"
+    "events": "^1.0.2",
+    "bluebird": "^2.9.33",
+    "request": "^2.58.0"
   },
   "scripts": {
     "build": "browserify --debug --transform reactify src/index.js > ../stock_tracker/public/bundle.js",
